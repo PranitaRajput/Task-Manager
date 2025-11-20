@@ -1,0 +1,111 @@
+/* Background */
+body {
+  background: #1f1f1f;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Center Wrapper */
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+/* White Card */
+.task-container {
+  width: 450px;
+  background: #ffffff;
+  color: #333;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Titles */
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* Form inputs */
+.task-form input,
+.task-form textarea,
+.task-form select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: #f7f7f7;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0052cc;
+}
+
+/* Task Section */
+.subtitle {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+/* Task Card */
+.task-card {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.status.pending { background: #ffcc00; }
+.status.in-progress { background: #0099ff; color: white; }
+.status.completed { background: #33cc33; color: white; }
+
+/* Delete Button */
+.delete-btn {
+  background: #ff4d4d;
+  padding: 8px 12px;
+  border: none;
+  color: rgb(15, 8, 8);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #d93636;
+}
+
+/* Empty Message */
+.empty {
+  color: #777;
+}

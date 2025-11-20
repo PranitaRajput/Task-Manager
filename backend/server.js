@@ -12,6 +12,7 @@ app.use(express.json());
 
 // Routes
 app.use("/api/tasks", taskRoutes);
+const PORT = process.env.PORT || 5000;
 
 // MongoDB Connection
 mongoose
